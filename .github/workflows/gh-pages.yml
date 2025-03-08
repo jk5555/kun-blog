@@ -31,9 +31,9 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/master'
         with:
-          PERSONAL_TOKEN: ${{ secrets.ACTION_TOKEN }}
+          PERSONAL_TOKEN: ${{secrets.ACTION_TOKEN}}
           PUBLISH_DIR: ./public  # 推送目录
           EXTERNAL_REPOSITORY: jk5555/jk5555.github.io # Github Pages远程仓库名
           PUBLISH_BRANCH: master # 推送到目标仓库的分支
