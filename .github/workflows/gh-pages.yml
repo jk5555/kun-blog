@@ -32,6 +32,6 @@ jobs:
         if: github.ref == 'refs/heads/main'
         with:
           PERSONAL_TOKEN: ${{ secrets.ACTION_TOKEN }}
-          PUBLISH_DIR: ./kun-blog/public  # 推送目录
+          PUBLISH_DIR: kun-blog/public  # 推送目录
           EXTERNAL_REPOSITORY: jk5555/jk5555.github.io # Github Pages远程仓库名
           PUBLISH_BRANCH: master # 推送到目标仓库的分支
