@@ -112,7 +112,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
   # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-  gitRepo = "https://github.com/jk5555"
+  gitRepo = "https://github.com/jk5555/kun-blog"
   # which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI
@@ -120,7 +120,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   fingerprint = ""
   # date format
   # 日期格式
-  dateFormat = "2025-01-02"
+  dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
   # 网站标题, 用于 Open Graph 和 Twitter Cards
   title = "IKUN的个人博客"
@@ -288,7 +288,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       avatarURL = "/images/avatar.png"
       # title shown in home page (HTML format is supported)
       # 主页显示的网站标题 (支持 HTML 格式)
-      title = "<div style=\"font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: #555;\"><h1 style=\"font-family: 'Poppins', sans-serif; font-size: 40px; font-weight: 600; color: #111; margin-bottom: 10px;\">你好，我是 [改变就是好事]</h1><p>我是一名后端开发者，热衷于探索新技术与解决复杂问题。在这里，我分享我的技术见解、项目经验、个人成长，以及好玩好用的资源！</p></div>"
+      title = "<div style=\"font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: #555;\"><h1 style=\"font-family: 'Poppins', sans-serif; font-size: 40px; font-weight: 600; color: #111; margin-bottom: 10px;\">你好，我是 <span style=\"color: #fea443; font-weight: bold; font-style: italic;\"><em>改变就是好事</em></span></h1><p>我是一名后端开发者，热衷于探索新技术与解决复杂问题。在这里，我分享我的技术见解、项目经验、个人成长，以及好玩好用的资源！</p></div>"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
       subtitle = "大丈夫行事，当摒弃侥幸之念，必取百炼成钢，厚积分秒之功，始得一鸣惊人。"
