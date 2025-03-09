@@ -1,20 +1,20 @@
 ---
-title: "Second_paper"
-subtitle: ""
-date: 2025-03-08T21:25:36+08:00
-lastmod: 2025-03-08T21:25:36+08:00
+title: "测试标题"
+subtitle: "这是一个副标题"
+date: "2025-03-08"
+lastmod: "2025-03-08"
 draft: false
 author: ""
 authorLink: ""
-description: ""
+description: "水水水水水水水水水水水水水水水水水水水"
 license: ""
 images: []
 
-tags: []
-categories: []
+tags: [Test]
+categories: [Test]
 
 featuredImage: ""
-featuredImagePreview: ""
+featuredImagePreview: "/images/test-0308.jpg"
 
 hiddenFromHomePage: false
 hiddenFromSearch: false
@@ -23,7 +23,7 @@ lightgallery: true
 ruby: true
 fraction: true
 fontawesome: true
-linkToMarkdown: true
+linkToMarkdown: false
 rssFullText: false
 
 toc:

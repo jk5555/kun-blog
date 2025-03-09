@@ -487,14 +487,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 文章页面的分享信息设置
     [params.page.share]
       enable = true
-      X = true
-      Threads = true
+      X = false
+      Threads = false
       Facebook = true
       Linkedin = false
       Whatsapp = false
       Pinterest = false
       Tumblr = false
-      HackerNews = true
+      HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
@@ -504,7 +504,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       Pocket = false
       Flipboard = false
       Weibo = true
-      Blogger = false
+      Blogger = true
       Baidu = false
       Odnoklassniki = false
       Evernote = false
