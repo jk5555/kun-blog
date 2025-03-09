@@ -1,12 +1,12 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
-subtitle: ""
+subtitle: "这里输入副标题"
 date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 author: ""
 authorLink: ""
-description: ""
+description: "这里输入摘要"
 license: ""
 images: []
 
@@ -23,7 +23,7 @@ lightgallery: true
 ruby: true
 fraction: true
 fontawesome: true
-linkToMarkdown: true
+linkToMarkdown: false
 rssFullText: false
 
 toc:
@@ -60,4 +60,5 @@ seo:
   # ...
 ---
 
+[//]: # (添加 <!--more--> 摘要分割符来拆分文章生成摘要. 摘要分隔符之前的内容将用作该文章的摘要.建议填写description属性，这里留空)
 <!--more-->

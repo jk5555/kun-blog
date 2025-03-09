@@ -37,4 +37,4 @@ jobs:
           PUBLISH_DIR: ./public  # 推送目录
           EXTERNAL_REPOSITORY: jk5555/jk5555.github.io # Github Pages远程仓库名
           PUBLISH_BRANCH: master # 推送到目标仓库的分支
-          force_orphan: true  # 强制清空目标分支历史（可选）
+#          force_orphan: true  # 强制清空目标分支历史（可选）
