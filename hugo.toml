@@ -129,7 +129,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   description = "分享开发中的技术点、个人成长、开源项目，以及好玩好用的资源。"
   # website images for Open Graph and Twitter Cards
   # 网站图片, 用于 Open Graph 和 Twitter Cards
-  images = ["/logo/logo.png"]
+  images = ["/logo/header.png"]
 
   # Author config
   # 作者配置
@@ -143,7 +143,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.header]
     # desktop header mode ["fixed", "normal", "auto"]
     # 桌面端导航栏模式 ["fixed", "normal", "auto"]
-    desktopMode = "auto"
+    desktopMode = "fixed"
     # mobile header mode ["fixed", "normal", "auto"]
     # 移动端导航栏模式 ["fixed", "normal", "auto"]
     mobileMode = "auto"
@@ -152,13 +152,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.header.title]
       # URL of the LOGO
       # LOGO 的 URL
-      logo = ""
+      logo = "/logo/header.png"
       # title name
       # 标题名称
-      name = "LoveIt"
+      name = "IKUN主页"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+      pre = ""#"<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='false'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       post = ""
@@ -172,10 +172,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     enable = true
     # Custom content (HTML format is supported)
     # 自定义内容 (支持 HTML 格式)
-    custom = ""
+    custom = "原创内容保留所有权利，转载需注明作者及来源。"
     # whether to show Hugo and theme info
     # 是否显示 Hugo 和主题信息
-    hugo = true
+    hugo = false
     # whether to show copyright info
     # 是否显示版权信息
     copyright = true
@@ -223,13 +223,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
-    title = "LoveIt"
+    title = "Kun-Blog"
     # whether to omit favicon resource links
     # 是否隐藏网站图标资源链接
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
     # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
-    svgFavicon = ""
+    svgFavicon = "/favicon/favicon.svg"
     # Android browser theme color
     # Android 浏览器主题色
     themeColor = "#ffffff"
@@ -288,10 +288,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       avatarURL = "/images/avatar.png"
       # title shown in home page (HTML format is supported)
       # 主页显示的网站标题 (支持 HTML 格式)
-      title = ""
+      title = "<div style=\"font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.7; color: #555;\"><h1 style=\"font-family: 'Poppins', sans-serif; font-size: 40px; font-weight: 600; color: #111; margin-bottom: 10px;\">你好，我是 [改变就是好事]</h1><p>我是一名后端开发者，热衷于探索新技术与解决复杂问题。在这里，我分享我的技术见解、项目经验、个人成长，以及好玩好用的资源！</p></div>"
       # subtitle shown in home page (HTML format is supported)
       # 主页显示的网站副标题 (允许 HTML 格式)
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+      subtitle = "大丈夫行事，当摒弃侥幸之念，必取百炼成钢，厚积分秒之功，始得一鸣惊人。"
       # whether to use typeit animation for subtitle
       # 是否为副标题显示打字机动画
       typeit = true
@@ -311,7 +311,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Social config in home page
   # 主页的社交信息设置
   [params.social]
-    GitHub = ""
+    GitHub = "jk5555"
     Linkedin = ""
     X = ""
     Instagram = ""
@@ -387,7 +387,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     TikTok = ""
     TryHackMe = ""
     Codeberg = ""
-    Email = ""
+    Email = "kun1.0@qq.com"
     RSS = ""
 
   # Page global config
@@ -416,7 +416,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     fontawesome = true
     # whether to show link to Raw Markdown content of the content
     # 是否显示原始 Markdown 文档内容的链接
-    linkToMarkdown = true
+    linkToMarkdown = false
     # whether to show the full text content in RSS
     # 是否在 RSS 中显示全文内容
     rssFullText = false
@@ -655,7 +655,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     cursorChar = "|"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
-    duration = -1
+    duration = 500
 
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
@@ -743,8 +743,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
-    guessSyntax = false
-    lineNos = false
+    guessSyntax = true
+    lineNos = true
     lineNumbersInTable = true
     noClasses = true
   # Goldmark is from Hugo 0.60 the default library used for Markdown
