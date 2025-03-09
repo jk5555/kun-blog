@@ -26,7 +26,7 @@ hasCJKLanguage = true
 
 # copyright description used only for seo schema
 # 版权描述，仅仅用于 SEO
-copyright = "© {{ now.Year }} [IKUN的个人博客]. 原创内容保留所有权利，遵循 [知识共享署名-非商业性使用-相同方式共享 4.0 国际协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)，转载需注明作者及来源。"
+copyright = "© 2025 [IKUN的个人博客]. 原创内容保留所有权利，遵循 [知识共享署名-非商业性使用-相同方式共享 4.0 国际协议](https://creativecommons.org/licenses/by-nc-sa/4.0/)，转载需注明作者及来源。"
 
 # whether to use robots.txt
 # 是否使用 robots.txt
@@ -744,7 +744,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     anchorLineNos = false
     codeFences = true
     guessSyntax = true
-    lineNos = true
+    lineNos = false
     lineNumbersInTable = true
     noClasses = true
   # Goldmark is from Hugo 0.60 the default library used for Markdown
