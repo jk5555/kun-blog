@@ -28,7 +28,7 @@ rssFullText: false
 
 toc:
   enable: true
-  auto: true
+  auto: false
   keepStatic: false
 code:
   copy: true
@@ -60,5 +60,5 @@ seo:
   # ...
 ---
 
-[//]: # (添加 <!--more--> 摘要分割符来拆分文章生成摘要. 摘要分隔符之前的内容将用作该文章的摘要.建议填写description属性，这里留空)
 <!--more-->
+[//]: # (添加 <!--more--> 摘要分割符来拆分文章生成摘要. 摘要分隔符之前的内容将用作该文章的摘要.建议填写description属性，这里留空)
