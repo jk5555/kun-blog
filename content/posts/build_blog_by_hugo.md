@@ -6,7 +6,7 @@ lastmod: 2023-01-22T13:01:10+08:00
 draft: false
 author: ""
 authorLink: ""
-description: "这里输入摘要111"
+description: "本文详细记录了使用 Hugo 静态网站生成器和 GitHub Pages 免费搭建个人博客的全过程。涵盖 Hugo 安装、主题配置、GitHub Pages 仓库创建、自动化部署流水线搭建，以及本地调试技巧。通过 GitHub Action 实现「源码推送 → 自动构建 → 静态页面发布」的完整 CI/CD 流程，无需服务器即可拥有高性能个人网站。"
 license: ""
 images: []
 
