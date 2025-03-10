@@ -2,7 +2,7 @@
 title: "用Hugo和GitHub Pages搭建个人网站"
 subtitle: "记录我的个人博客网站搭建全过程"
 date: 2022-03-10T13:03:10+08:00
-lastmod: 2023-01-22T13:03:10+08:00
+lastmod: 2023-01-22T13:01:10+08:00
 draft: false
 author: ""
 authorLink: ""
