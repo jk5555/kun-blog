@@ -130,7 +130,7 @@ article.single.summary:hover {
 }
 
 /* ================= 标签样式 ================= */
-.post-tags {
+.post-footer.post-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.2rem;
@@ -138,11 +138,11 @@ article.single.summary:hover {
 }
 
 /* 隐藏原始逗号 */
-.post-tags > :not(a):not(i) {
+.post-footer.post-tags > :not(a):not(i) {
   display: none;
 }
 
-.post-tags a {
+.post-footer.post-tags a {
   font-size: 0.7rem;
   color: #666;
   background: rgba(0, 0, 0, 0.04);
@@ -154,7 +154,7 @@ article.single.summary:hover {
   align-items: center;
 }
 
-.post-tags a::before {
+.post-footer.post-tags a::before {
   content: "#";
   margin-right: 0.2em;
 }
@@ -166,7 +166,7 @@ article.single.summary:hover {
 //  margin-left: 0.8rem;
 //}
 
-.post-tags a:hover {
+.post-footer.post-tags a:hover {
   background: rgba(0, 0, 0, 0.08);
   color: #1d1d1f;
 }
@@ -196,7 +196,7 @@ article.single.summary:hover {
     align-items: center;
   }
 
-  .post-tags {
+  .post-footer.post-tags {
     gap: 0.3rem;
   }
 }
@@ -213,7 +213,7 @@ article.single.summary:hover {
     font-size: 1rem;
   }
 
-  .post-tags a {
+  .post-footer.post-tags a {
     font-size: 0.6rem;
     padding: 0.2rem 0.2rem;
   }
