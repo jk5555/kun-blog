@@ -108,7 +108,7 @@ article.single.summary:hover {
 }
 
 /* ================= 底部区域 ================= */
-.post-footer {
+article.single.summary .post-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   padding-top: 0.6rem;
   display: flex;
@@ -116,7 +116,7 @@ article.single.summary:hover {
   gap: 0.5rem;
 }
 
-.post-footer > a {
+article.single.summary .post-footer > a {
   color: #0066cc;
   text-decoration: none;
   font-weight: 500;
@@ -125,12 +125,12 @@ article.single.summary:hover {
   transition: background 0.25s ease;
 }
 
-.post-footer > a:hover {
+article.single.summary .post-footer > a:hover {
   background: rgba(0, 102, 204, 0.08);
 }
 
 /* ================= 标签样式 ================= */
-.post-footer.post-tags {
+article.single.summary .post-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.2rem;
@@ -138,11 +138,11 @@ article.single.summary:hover {
 }
 
 /* 隐藏原始逗号 */
-.post-footer.post-tags > :not(a):not(i) {
+article.single.summary .post-tags > :not(a):not(i) {
   display: none;
 }
 
-.post-footer.post-tags a {
+article.single.summary .post-tags a {
   font-size: 0.7rem;
   color: #666;
   background: rgba(0, 0, 0, 0.04);
@@ -154,19 +154,19 @@ article.single.summary:hover {
   align-items: center;
 }
 
-.post-footer.post-tags a::before {
+article.single.summary .post-tags a::before {
   content: "#";
   margin-right: 0.2em;
 }
 
 ///* 标签分隔符 */
-//.post-tags a:not(:last-child)::after {
+//article.single.summary .post-tags a:not(:last-child)::after {
 //  content: "·";
 //  color: #999;
 //  margin-left: 0.8rem;
 //}
 
-.post-footer.post-tags a:hover {
+article.single.summary .post-tags a:hover {
   background: rgba(0, 0, 0, 0.08);
   color: #1d1d1f;
 }
@@ -190,13 +190,13 @@ article.single.summary:hover {
     font-size: 1.6rem;
   }
 
-  .post-footer {
+  article.single.summary .post-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
-  .post-footer.post-tags {
+  article.single.summary .post-tags {
     gap: 0.3rem;
   }
 }
@@ -213,7 +213,7 @@ article.single.summary:hover {
     font-size: 1rem;
   }
 
-  .post-footer.post-tags a {
+  article.single.summary .post-tags a {
     font-size: 0.6rem;
     padding: 0.2rem 0.2rem;
   }
