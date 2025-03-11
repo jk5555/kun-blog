@@ -354,3 +354,131 @@ body {
     color: #7f8c8d;
   }
 }
+
+/* 目录容器样式 */
+.container .toc {
+
+  --toc-highlight-color: #{$single-link-hover-color};
+  --toc-bg-color: #{lighten($code-background-color, 3%)};
+  --toc-border-color: #{transparentize($global-border-color, 0.6)};
+  --toc-text-color: #{$global-font-color};
+
+  /* 暗黑模式变量 */
+  [theme=dark] & {
+    --toc-highlight-color: #{$single-link-hover-color-dark};
+    --toc-bg-color: #{lighten($code-background-color-dark, 3%)};
+    --toc-border-color: #{transparentize($global-border-color-dark, 0.6)};
+    --toc-text-color: #{$global-font-color-dark};
+  }
+
+  &::after {
+    position: fixed;
+    top: 100px;
+    right: 2% !important;
+    width: 400px !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 1rem;
+    max-height: 80vh;
+    overflow-y: auto;
+    transition: transform 0.2s ease;
+    z-index: 100;
+    background: var(--toc-highlight-color);
+  }
+
+}
+
+/* 标题样式 */
+.toc-title {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #3498db;
+}
+
+/* 目录内容区域 */
+.toc-content {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* 列表基础样式 */
+#TableOfContents ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+#TableOfContents li {
+  margin: 0.4rem 0;
+  position: relative;
+}
+
+/* 链接样式 */
+#TableOfContents a {
+  text-decoration: none;
+  color: #4a5568;
+  display: block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+/* 悬停效果 */
+#TableOfContents a:hover {
+  color: #3498db;
+  background: rgba(52, 152, 219, 0.08);
+  transform: translateX(4px);
+}
+
+/* 当前激活项 */
+#TableOfContents .active {
+  color: #3498db;
+  font-weight: 500;
+  border-left: 3px solid #3498db;
+  background: rgba(52, 152, 219, 0.1);
+}
+
+/* 层级缩进 */
+#TableOfContents ul ul { padding-left: 1.2rem; }
+#TableOfContents ul ul ul { padding-left: 1.4rem; }
+
+/* 层级标识线 */
+#TableOfContents li::before {
+  content: "";
+  position: absolute;
+  left: -0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #cbd5e0;
+  border-radius: 50%;
+}
+
+/* 当前层级标识 */
+#TableOfContents .has-active::before {
+  background: #3498db;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .container .toc {
+    display: none; /* 在小屏幕上隐藏目录 */
+  }
+}
+
+/* 滚动条美化 */
+.toc::-webkit-scrollbar {
+  width: 6px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: rgba(52, 152, 219, 0.05);
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 4px;
+}
