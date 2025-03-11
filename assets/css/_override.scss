@@ -371,6 +371,8 @@ body {
     --toc-text-color: #{$global-font-color-dark};
   }
 
+  width: 400px !important;
+
   &::after {
     position: fixed;
     top: 100px;
@@ -386,7 +388,7 @@ body {
     background: var(--toc-highlight-color);
   }
 
-  width: 400px !important;
+
 
 }
 
