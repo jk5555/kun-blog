@@ -1,4 +1,5 @@
-.post-content img {
+//图片阴影边界条纹
+article.page.single img {
   max-width: 100%;
   min-height: 1em;
   // =====My Custom====
@@ -7,4 +8,193 @@
   box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15) !important;
   border-radius: 3px;
   // =====My Custom====
+}
+
+//图片点击放大
+article.page.single img {
+  cursor: zoom-in;
+  transition: transform 0.3s;
+}
+
+article.page.single img:active {
+  cursor: zoom-out;
+  transform: scale(2);
+  z-index: 999;
+}
+
+
+//首页卡片文章效果
+/* 卡片容器基础样式 */
+article.single.summary {
+  background: #ffffff;
+  border-radius: 18px; /* iOS风格大圆角 */
+  box-shadow:
+          0 4px 8px rgba(0, 0, 0, 0.04),
+          0 12px 24px rgba(0, 0, 0, 0.06); /* 双层阴影增加层次感 */
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden; /* 确保内部元素圆角不溢出 */
+  max-width: 100%; /* 限制卡片最大宽度 */
+  border: 1px solid rgba(0, 0, 0, 0.08); /* 极细边框 */
+  position: relative;
+}
+
+/* 悬停动效 */
+article.single.summary:hover {
+  transform: translateY(-4px);
+  box-shadow:
+          0 8px 16px rgba(0, 0, 0, 0.08),
+          0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* 图片容器 */
+.featured-image-preview {
+  border-radius: 12px;
+  overflow: hidden;
+  margin: -1.5rem -1.5rem 1.5rem -1.5rem;
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.08); /* 内阴影增加质感 */
+}
+
+/* 添加渐变装饰层 (可选) */
+.featured-image-preview::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.1), transparent);
+  pointer-events: none;
+}
+
+/* 图片样式 */
+.featured-image-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: inherit; /* 继承容器圆角 */
+  transition: transform 0.3s ease;
+}
+
+/* 标题样式 */
+.single-title {
+  font-size: 1.6rem;
+  margin: 0 0 1rem 0;
+  color: #1d1d1f;
+  line-height: 1.2;
+}
+
+.single-title a {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+  background-size: 0 2px;
+  background-position: 0 95%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+}
+
+.single-title a:hover {
+  background-size: 100% 2px;
+}
+
+/* 元信息样式 */
+.post-meta {
+  font-size: 0.9rem;
+  color: #86868b;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.post-meta a {
+  color: #86868b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.post-meta a:hover {
+  color: #1d1d1f;
+}
+
+/* 内容摘要 */
+.content {
+  color: #515154;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* 底部链接 */
+.post-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-footer a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.post-footer a:hover {
+  background: rgba(0, 102, 204, 0.08);
+}
+
+/* 标签样式 */
+.post-tags {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.post-tags > :not(a):not(i) {
+  display: none;
+}
+
+.post-tags a {
+  position: relative;
+  padding: 0.3rem 0.5rem;
+  background: rgba(0,0,0,0.05);
+  border-radius: 12px; /* 更大圆角 */
+}
+
+.post-tags a::before {
+  content: "#";
+  margin-right: 0.3em;
+  opacity: 0.6;
+}
+
+/* 添加卡片长按效果（移动端） */
+@media (hover: none) {
+  article.single.summary:active {
+    transform: scale(0.98);
+  }
+}
+
+/* 暗黑模式适配 */
+@media (prefers-color-scheme: dark) {
+  article.single.summary {
+    background: #1c1c1e;
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+  .single-title,
+  .single-title a {
+    color: #f5f5f7;
+  }
+  .post-meta,
+  .post-meta a {
+    color: #86868b;
+  }
+  .content {
+    color: #aeaeb2;
+  }
 }

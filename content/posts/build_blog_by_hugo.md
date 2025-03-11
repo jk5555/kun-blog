@@ -10,7 +10,7 @@ description: "本文详细记录了使用 Hugo 静态网站生成器和 GitHub P
 license: ""
 images: []
 
-tags: [建站, Hugo, GitHub Pages]
+tags: [建站,Hugo,GitHub Pages]
 categories: [个人成长]
 
 featuredImage: "/images/build_blog_by_hugo_head.png"
@@ -248,6 +248,6 @@ hugo serve
 * LoveIt内置支持的icon图标网站：[Font Awesome](https://fontawesome.com/)
 
 ## TODO事项
-至此一个博客网站基本搭建完成，但是还有一些事情需要去做。比如：站内搜索，评论系统，SEO，站点信息统计 等等。这些优先级可以缓缓，先把内容做好，差不多了时候再去接入。
+至此一个博客网站基本搭建完成，但是还有一些事情需要去做。比如：站内搜索，评论系统，SEO，站点信息统计 等等。这些优先级可以放缓，先把内容做好，差不多了时候再去接入。
 
 
