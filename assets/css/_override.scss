@@ -371,7 +371,9 @@ body {
     --toc-text-color: #{$global-font-color-dark};
   }
 
-  width: 400px !important;
+
+  right: 30px !important;     // 新增右侧定位
+  max-width: 400px !important;
 
   &::after {
     position: fixed;
