@@ -375,7 +375,7 @@ body {
     position: fixed;
     top: 100px;
     right: 2% !important;
-    width: 400px !important;
+
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 0.8rem 1rem;
@@ -386,12 +386,14 @@ body {
     background: var(--toc-highlight-color);
   }
 
+  width: 400px !important;
+
 }
 
 /* 标题样式 */
 .toc-title {
   font-size: 1.25rem;
-  color: #2c3e50;
+  color: var(--toc-text-color) !important;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #3498db;
