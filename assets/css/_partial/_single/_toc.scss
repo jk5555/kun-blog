@@ -14,7 +14,7 @@
     --toc-text-color: #{$global-font-color-dark};
   }
 
-  max-width: 400px !important;
+  //max-width: 400px !important;
 
   &::after {
     position: fixed;
@@ -110,9 +110,16 @@
 }
 
 /* 响应式设计 */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
   .container .toc {
     display: none; /* 在小屏幕上隐藏目录 */
+  }
+}
+
+/* 响应式设计 */
+@media (min-width: 768px) {
+  #toc-static {
+    display: none; /* 在大屏幕上隐藏目录 */
   }
 }
 

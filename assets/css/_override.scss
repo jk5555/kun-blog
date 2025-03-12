@@ -1,3 +1,42 @@
+
+
+//列表页
+/* 基础样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* 主容器样式 */
+.main {
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+
+/* 年份分组标题 */
+.group-title {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin: 2rem 0 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid #3498db;
+}
+
 //图片阴影边界条纹
 article.page.single img {
   max-width: 100%;
@@ -93,6 +132,7 @@ article.single.summary:hover {
   font-size: 0.85rem;
   color: #86868b;
   margin-bottom: 1rem;
+  align-items: center;
 }
 
 .post-meta a {
@@ -106,7 +146,7 @@ article.single.summary:hover {
 }
 
 /* ================= 内容摘要 ================= */
-.content {
+article.single.summary .content {
   color: #515154;
   line-height: 1.6;
   margin-bottom: 1.2rem;
@@ -164,13 +204,6 @@ article.single.summary .post-tags a::before {
   content: "#";
   margin-right: 0.2em;
 }
-
-///* 标签分隔符 */
-//article.single.summary .post-tags a:not(:last-child)::after {
-//  content: "·";
-//  color: #999;
-//  margin-left: 0.8rem;
-//}
 
 article.single.summary .post-tags a:hover {
   background: rgba(0, 0, 0, 0.08);
@@ -306,7 +339,7 @@ article.single.summary .post-tags a:hover {
     color: #86868b;
   }
   .content {
-    color: #aeaeb2;
+    color: #A9A9B3FF;
   }
 
   /* 文章条目样式 */
@@ -314,46 +347,7 @@ article.single.summary .post-tags a:hover {
     background: #102A3EFF;
     border-color: rgba(255, 255, 255, 0.08);
   }
+
 }
-
-
-//列表页
-/* 基础样式重置 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f8f9fa;
-}
-
-/* 主容器样式 */
-.main {
-  padding: 2rem 0;
-}
-
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-
-
-/* 年份分组标题 */
-.group-title {
-  font-size: 1.5rem;
-  color: #3498db;
-  margin: 2rem 0 1rem;
-  padding-left: 1rem;
-  border-left: 4px solid #3498db;
-}
-
-
 
 
