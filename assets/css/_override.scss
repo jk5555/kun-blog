@@ -409,4 +409,10 @@ article.single.summary .post-tags a:hover {
 }
 
 
+.menu-item.theme-switch i {
+  transition: transform 0.3s ease;
+}
 
+[data-theme="dark"] .menu-item.theme-switch i {
+  transform: rotate(180deg);
+}
