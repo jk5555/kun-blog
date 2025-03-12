@@ -65,7 +65,6 @@ article.page.single img:active {
 //首页卡片文章效果
 /* ================= 卡片基础样式 ================= */
 article.single.summary {
-  background: #fff;
   border-radius: 12px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
   margin: 0.6rem;
@@ -215,7 +214,6 @@ article.single.summary .post-tags a:hover {
   display: flex;
   justify-content: space-between;
   margin: 0.8rem 0;
-  background: white;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -325,29 +323,90 @@ article.single.summary .post-tags a:hover {
 
 
 /* 暗黑模式适配 */
+/* ================= 深色模式增强适配 ================= */
 @media (prefers-color-scheme: dark) {
-  article.single.summary {
-    background: #1c1c1e;
-    border-color: rgba(255, 255, 255, 0.08);
-  }
-  .single-title,
-  .single-title a {
-    color: #f5f5f7;
-  }
-  .post-meta,
-  .post-meta a {
-    color: #86868b;
-  }
-  .content {
-    color: #A9A9B3FF;
+  body {
+    background: #0a0a0a;
+    color: #e0e0e0;
   }
 
-  /* 文章条目样式 */
+  /* 卡片全局样式 */
+  article.single.summary {
+    background: #1a1a1a;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 3px 12px rgba(255, 255, 255, 0.05);
+  }
+
+  /* 卡片悬停效果 */
+  article.single.summary:hover {
+    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.1);
+  }
+
+  /* 标题渐变优化 */
+  .single-title {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  /* 正文内容 */
+  .content {
+    color: #c0c0c0;
+  }
+
+  /* 元信息文字 */
+  .post-meta,
+  .post-meta a {
+    color: #8a8a8e;
+  }
+
+  /* 底部链接 */
+  .post-footer > a {
+    color: #5dade2;
+    &:hover {
+      background: rgba(93, 173, 226, 0.15);
+    }
+  }
+
+  /* 标签样式 */
+  .post-tags a {
+    color: #a0a0a0;
+    background: rgba(255, 255, 255, 0.08);
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #e0e0e0;
+    }
+  }
+
+  /* 文章条目 */
   .archive-item {
     background: #102A3EFF;
     border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.03);
+    &:hover {
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.08);
+    }
   }
 
+  /* 链接颜色 */
+  .archive-item-link {
+    color: #a0c4e0;
+    &:hover {
+      color: #5dade2;
+    }
+  }
+
+  /* 图片阴影优化 */
+  article.page.single img {
+    box-shadow: 0 5px 11px 0 rgba(255, 255, 255, 0.08),
+    0 4px 15px 0 rgba(255, 255, 255, 0.06) !important;
+  }
+
+  /* 代码块边框（如果页面有代码块） */
+  pre {
+    background: #121212 !important;
+    border: 1px solid #2a2a2a;
+  }
 }
+
 
 
