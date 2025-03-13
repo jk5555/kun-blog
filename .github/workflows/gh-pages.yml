@@ -18,7 +18,7 @@ jobs:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
           submodules-branch: |
-            LoveIt=v0.3.0    # 指定子模块分支
+            LoveIt=release   # 指定子模块分支
 
       - name: Detailed submodule info
         run: |
