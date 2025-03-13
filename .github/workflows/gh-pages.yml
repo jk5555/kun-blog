@@ -12,6 +12,12 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
+      - name: Verify LoveIt submodule branch
+        run: |
+          cd themes/LoveIt
+          git branch  # 应显示当前分支 
+          git log -1  # 检查最新提交是否属于配置的分支
+
       - name: Checkout code
         uses: actions/checkout@v4
         with:
