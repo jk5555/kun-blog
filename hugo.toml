@@ -255,7 +255,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     placeholder = ""
     # max number of results length
     # 最大结果数目
-    maxResultLength = 10
+    maxResultLength = 5
     # snippet length of the result
     # 结果内容片段长度
     snippetLength = 30
@@ -266,9 +266,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 是否在搜索索引中使用基于 baseURL 的绝对路径
     absoluteURL = false
     [params.search.algolia]
-      index = ""
-      appID = ""
-      searchKey = ""
+      index = "kun-blog-index"
+      appID = "JQPZBOKO43"
+      searchKey = "570b1acbc3b588a68ff42e1740938c8e"
 
   # Home page config
   # 主页信息设置
