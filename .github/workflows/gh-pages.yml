@@ -12,16 +12,13 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - name: Verify LoveIt submodule branch
-        run: |
-          git branch  # 应显示当前分支 
-          git log -1  # 检查最新提交是否属于配置的分支
-
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules-branch: |
+            LoveIt=v0.3.0    # 指定子模块分支
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
