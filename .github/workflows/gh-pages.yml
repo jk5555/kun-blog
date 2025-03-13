@@ -20,6 +20,11 @@ jobs:
           submodules-branch: |
             LoveIt=v0.3.0    # 指定子模块分支
 
+      - name: Detailed submodule info
+        run: |
+          git submodule foreach 'git status' # 列出所有子模块的路径和commit信息
+          git submodule foreach 'git remote -v' # 显示子模块的远程分支信息
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
