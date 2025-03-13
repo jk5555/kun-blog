@@ -17,8 +17,6 @@ jobs:
         with:
           submodules: recursive  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-          submodules-branch: |
-            LoveIt=release   # 指定子模块分支
 
       - name: Detailed submodule info
         run: |
@@ -30,7 +28,6 @@ jobs:
         with:
           hugo-version: '0.145.0'
           extended: true # 是否启用hugo extended
-          working-directory: .
 
       - name: Build
         run: hugo --minify
