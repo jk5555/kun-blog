@@ -660,8 +660,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Site verification code for Google/Bing/Yandex/Pinterest/Baidu
   # 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu
   [params.verification]
-    google = ""
-    bing = ""
+    google = "dtYISn5OVJaIQN8mNPDGEX4eGA0Lg8KloEtUwx-dlJw"
+    bing = "2135F78481BB24F5C2371882FDA365FE"
     yandex = ""
     pinterest = ""
     baidu = ""
