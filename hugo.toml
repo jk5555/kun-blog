@@ -275,7 +275,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.home]
     # amount of RSS pages
     # RSS 文章数目
-    rss = 10
+    rss = 6
     # Home page profile
     # 主页个人信息
     [params.home.profile]
@@ -539,7 +539,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         appId = "1ozB2CFOhUHRlcZmSgxBoVXl-gzGzoHsz"
         appKey = "uEo2kx3eGjGhNRfLb37WtlCS"
         placeholder = ""
-        avatar = "mp"
+        avatar = "wavatar"
         meta= ""
         pageSize = 10
         # automatically adapt the current theme i18n configuration when empty
@@ -549,7 +549,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         recordIP = true
         highlight = true
         enableQQ = false
-        serverURLs = "https://1ozb2cfo.lc-cn-n1-shared.com"
+        serverURLs = ""
         # emoji data file name, default is "google.yml"
         # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
         # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
