@@ -6,4 +6,4 @@ md基础语法：<https://hugoloveit.com/zh-cn/basic-markdown-syntax/>
 
 优先级较高的todo：文章导入,关于 页面完善
 
-todo: SEO，文章导入,导航页面
+todo: 文章导入
