@@ -187,6 +187,10 @@ article.single.summary .post-tags > :not(a):not(i) {
   display: none;
 }
 
+.menu-item.delimiter {
+  display: none;
+}
+
 article.single.summary .post-tags a {
   font-size: 0.7rem;
   color: #666;
@@ -252,6 +256,138 @@ article.single.summary .post-tags a:hover {
   margin-left: 1.5rem;
   flex-shrink: 0;
 }
+
+/* 基础字体和颜色设置 */
+#header-desktop {
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  height: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: 'Exo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* 科技感字体 */
+}
+
+.header-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo特效 */
+.header-title a {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: transparent;
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.header-title a:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+  filter: drop-shadow(0 2px 4px rgba(0, 242, 254, 0.2));
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-title:hover .logo {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* 菜单项特效 */
+.menu-item {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 8px 16px;
+  margin: 0 6px;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menu-item:not(.delimiter):hover {
+  color: #fff;
+  background: rgba(79, 172, 254, 0.1);
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #4facfe;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item:hover::after {
+  width: calc(100% - 32px);
+  left: 16px;
+}
+
+#search-desktop {
+  display: inline-flex;       /* 启用flex布局 */
+  align-items: center;        /* 垂直居中 */
+  justify-content: center;   /* 水平居中 */
+}
+
+/* 搜索按钮容器 */
+#search-toggle-desktop {
+  display: inline-flex;       /* 启用flex布局 */
+  align-items: center;        /* 垂直居中 */
+  justify-content: center;   /* 水平居中 */
+  width: 36px;               /* 固定宽度 */
+  height: 36px;              /* 固定高度 */
+  border-radius: 70%;        /* 圆形按钮 */
+  transition: all 0.3s ease; /* 平滑过渡 */
+}
+
+
+
+/* 搜索框优化 */
+#search-input-desktop {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+#search-input-desktop:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.3);
+}
+
+/* 主题切换按钮 */
+.theme-switch:hover {
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* 字体引入 */
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&display=swap');
+
+@import url('https://fonts.font.im/css?family=Kaushan+Script');
+$header-title-font-family: 'Kaushan Script', cursive;
+
+
 
 /* ================= 响应式布局 ================= */
 @media (min-width: 768px) {
@@ -328,6 +464,12 @@ article.single.summary .post-tags a:hover {
   body {
     background: #0a0a0a;
     color: #e0e0e0;
+  }
+
+  /* 标题渐变优化 */
+  #header-desktop {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   }
 
   /* 卡片全局样式 */
