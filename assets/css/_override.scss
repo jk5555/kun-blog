@@ -258,7 +258,7 @@ article.single.summary .post-tags a:hover {
 }
 
 /* 基础字体和颜色设置 */
-#header-desktop {
+#header-desktop, #header-mobile {
   background: linear-gradient(135deg, #3498db, #2c3e50);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   height: 60px;
@@ -429,6 +429,18 @@ $header-title-font-family: 'Kaushan Script', cursive;
     margin-left: 0;
     margin-top: 0.5rem;
     color: #7f8c8d;
+  }
+
+  .menu-item {
+    color: rgb(11, 15, 19);
+    padding: 4px 8px;
+    margin: 0 3px;
+    border-radius: 2px;
+    position: relative;
+    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
   }
 }
 
