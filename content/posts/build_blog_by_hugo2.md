@@ -16,7 +16,7 @@ license: ""
 images: []
 
 tags: [Hugo,LoveIt]
-categories: [个人成长]
+categories: [网站]
 
 featuredImage: "/images/build_blog_by_hugo2_header.png"
 featuredImagePreview: "/images/build_blog_by_hugo2_header.png"

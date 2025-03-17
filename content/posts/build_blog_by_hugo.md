@@ -11,7 +11,7 @@ license: ""
 images: []
 
 tags: [建站,Hugo,GitHub Pages]
-categories: [个人成长]
+categories: [网站]
 
 featuredImage: "/images/build_blog_by_hugo_head.png"
 featuredImagePreview: "/images/build_blog_by_hugo_pre.png"
