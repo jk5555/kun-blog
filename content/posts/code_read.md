@@ -1,5 +1,5 @@
 ---
-title: "《编码隐匿在计算机背后的语言》-[美] Charles Petzold 读后感"
+title: "《编码隐匿在计算机软硬件背后的语言》-[美] Charles Petzold 读后感"
 subtitle: ""
 date: 2025-03-17T22:30:56+08:00
 lastmod: 2025-03-17T22:30:56+08:00
