@@ -1,8 +1,8 @@
 ---
 title: "RabbitMQ基本特性、高级特性 以及整合springboot的用法总结"
 subtitle: ""
-date: 2022-07-21T20:43:11+08:00
-lastmod: 2022-07-21T20:43:11+08:00
+date: 2022-07-22T20:43:11+08:00
+lastmod: 2022-07-22T20:43:11+08:00
 draft: false
 author: ""
 authorLink: ""
